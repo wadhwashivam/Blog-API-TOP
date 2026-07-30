@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<body>
+    <section>
+        <h1>New Post</h1>
+
+        <form id="newPost-form">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+            <br>
+            <textarea name="content" id="content" placeholder="Write your content here..." rows="40" cols="20"></textarea>
+            <br>
+            <input type="checkbox" id="published" name="published" value="Published">
+            <label for="published">Published</label>
+            <br>
+            <button type="submit">Create Post</button>
+        </form>
+    </section>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/newPost.js"></script>
+</body>
+</html>
