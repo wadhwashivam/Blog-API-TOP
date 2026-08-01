@@ -1,3 +1,6 @@
 node_modules/
 .env
 generated/
+
+client-public/public/output.css
+client-admin/public/output.css

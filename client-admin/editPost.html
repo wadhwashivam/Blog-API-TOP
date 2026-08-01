@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Post</title>
+    <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-    <section>
-        <h1>Edit Post</h1>
+    <div class="navbar bg-base-100 shadow-sm">
+        <h1 class="text-3xl">Edit Post</h1>
+    </div>
 
+    <div class="flex flex-col justify-center items-center min-h-100">
         <form id="editPost-form">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" value = "" required>
+            <label for="title" class="text-2xl">Title</label>
+            <input type="text" name="title" id="title" class="input mb-5 mt-5" required>
             <br>
-            <textarea name="content" id="content" placeholder="Write your content here..." rows="40" cols="20" value = ""></textarea>
+            <textarea name="content" id="content" placeholder="Write your content here..." class="textarea textarea-primary min-h-200 min-w-200"></textarea>
             <br>
-            <input type="checkbox" id="published" name="published" value="Published">
-            <label for="published">Published</label>
-            <br>
-            <button type="submit">Submit Post</button>
-            <br>
-            <button type="button" id="deletePost">Delete Post</button>
+            <div class="mt-5 mb-5 flex flex-row justify-center gap-3">
+                <input type="checkbox" id="published" name="published" value="Published">
+                <label for="published" class="text-xl">Published</label>
+            </div>
+            <div class="flex flex-col gap-5">
+            <button type="submit" class="btn btn-success ">Submit Post</button>
+            <button type="button" id="deletePost" class="btn btn-error">Delete Post</button>
+
+            </div>
         </form>
+    </div>
+    
     </section>
 
     <section>

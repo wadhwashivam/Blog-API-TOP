@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-    <section>
-        <h2>Login Form for Author</h2>
+    <div class="flex flex-col justify-center items-center min-h-100">
+        <h2 class="text-2xl">Login Form for Author</h2>
 
-        <form id="login-form">
-            <label for="username">Username</label>
-            <input type="email" name="username" id="username" required>
+        <form id="login-form" class="mt-10">
+            <label for="username" class="mb-2">Username</label>
+            <input type="email" name="username" id="username" required class="input mb-3">
             <br>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" required class="input">
             <br>
-            <button type="submit">Login</button>
+            <button type="submit" class="btn btn-primary mt-10 ml-22">Login</button>
         </form>
-    </section>
+    </div>
 
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>

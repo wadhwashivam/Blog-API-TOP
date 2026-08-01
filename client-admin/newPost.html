@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Post</title>
+    <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-    <section>
-        <h1>New Post</h1>
+    <div class="navbar bg-base-100 shadow-sm">
+        <h1 class="text-3xl">New Post</h1>
+    </div>
 
+    <div class="flex flex-col justify-center items-center min-h-100">
         <form id="newPost-form">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" required>
+            <label for="title" class="text-2xl">Title</label>
+            <input type="text" name="title" id="title" class="input mb-5 mt-5" required>
             <br>
-            <textarea name="content" id="content" placeholder="Write your content here..." rows="40" cols="20"></textarea>
+            <textarea name="content" id="content" placeholder="Write your content here..." class="textarea textarea-primary min-h-200 min-w-200"></textarea>
             <br>
-            <input type="checkbox" id="published" name="published" value="Published">
-            <label for="published">Published</label>
-            <br>
-            <button type="submit">Create Post</button>
+            <div class="mt-5 mb-5 flex flex-row justify-center gap-3">
+                <input type="checkbox" id="published" name="published" value="Published">
+                <label for="published" class="text-xl">Published</label>
+            </div>
+            <div class="flex flex-col">
+                <button type="submit" class="btn btn-primary">Create Post</button>
+            </div>
         </form>
-    </section>
-
+    </div>
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/api.js"></script>
