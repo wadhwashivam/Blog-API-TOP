@@ -1,4 +1,4 @@
-document.querySelector(".signUp-form").addEventListener("submit", function(event) {
+document.getElementById("signUp-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const usernameValue = document.getElementById("username").value;

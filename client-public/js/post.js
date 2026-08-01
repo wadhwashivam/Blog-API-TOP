@@ -16,9 +16,11 @@ function loadComments(){
 
         comments.forEach(function(comment) {
             const commentItem = document.createElement("li");
+            commentItem.className = "list-row";
+
             const commentContent = document.createElement("span");
-            
             commentContent.textContent = comment.content;
+            commentContent.className = "font-medium";
 
             commentItem.appendChild(commentContent);
             commentsList.appendChild(commentItem);

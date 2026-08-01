@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
+    <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-    <section>
-        <h2>SignUp Form</h2>
+    <div class="flex flex-col justify-center items-center min-h-100">
+        <h2 class="text-2xl">SignUp Form</h2>
 
-        <form class="signUp-form">
-            <label for="username">Username</label>
-            <input type="email" name="username" id="username" required>
+        <form id="signUp-form" class="mt-10">
+            <label for="username" class="mb-2">Username</label>
+            <input type="email" name="username" id="username" class="input mb-3" required>
             <br>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" class="input" required>
             <br>
             <label for="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword" id="confirmPassword" required>
+            <input type="password" name="confirmPassword" id="confirmPassword" class="input" required>
             <br>
-            <button type="submit">SignUp</button>
+            <button type="submit" class="btn btn-primary mt-10 ml-22">SignUp</button>
         </form>
-    </section>
+    </div>
 
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>

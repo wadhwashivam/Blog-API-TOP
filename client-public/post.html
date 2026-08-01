@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
-    <a href="index.html"><- Back to all posts</a>
-    <article>
-        <h1 id="post-title"></h1>
-        <p id="post-content"></p>
-    </article>
+    <a href="index.html" class="text-base mb-20"><- Back to all posts</a>
+    <div class="flex flex-col  items-center min-w-500 min-h-300">
+        <article class="min-w-100">
+            <h1 id="post-title" class="text-3xl mb-5"></h1>
+            <p id="post-content" class="text-xl"></p>
+        </article>
 
-    <section>
-        <h2>Comments</h2>
-        <ul id="comment-list"></ul>
+        <div class="flex flex-col mt-100 min-w-100">
+            <h2 class="text-base">Comments: </h2>
+            <ul id="comment-list" class="list bg-base-100 rounded-box shadow-md max-w-md max-auto mt-6 mb-10"></ul>
 
-        <form id="comment-form">
-            <textarea id="comment-content" required></textarea>
-            <button type="submit">Post Content</button>
-        </form>
-    </section>
+            <form id="comment-form">
+                <textarea id="comment-content" required class="textarea textarea-primary min-w-100"></textarea>
+                <br>
+                <div class="flex flex-col">
+                    <button type="submit" class="btn btn-success">Post Content</button>
+                </div>
 
+            </form>
+        </div>
+    </div>
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/api.js"></script>
