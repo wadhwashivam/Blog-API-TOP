@@ -22,9 +22,9 @@ app.use("/", indexRouter);
 app.use("/", authenticationRouter);
 
 
-app.listen(process.env.NODE_PORT, (error)=> {
+app.listen(process.env.PORT, (error)=> {
     if (error){
         throw error;
     }
-    console.log("Listening on port: ", process.env.NODE_PORT);
+    console.log("Listening on port: ", process.env.PORT);
 })
