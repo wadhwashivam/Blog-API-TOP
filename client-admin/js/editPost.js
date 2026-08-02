@@ -43,8 +43,14 @@ function loadComments(){
 
         comments.forEach(function(comment){
             const commentItem = document.createElement("li");
+            commentItem.className = "list-row items-center";
+
             const commentContent = document.createElement("span");
+            commentContent.textContent = comment.content;
+            commentContent.className = "text-xl list-col-grow"
+
             const deleteButton = document.createElement("button");
+            deleteButton.className = "btn btn-error btn-sm";
 
             deleteButton.textContent = "Delete Comment"
             deleteButton.addEventListener("click", function(){
